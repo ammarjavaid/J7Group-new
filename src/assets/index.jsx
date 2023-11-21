@@ -103,26 +103,26 @@ export { default as Youtube } from "./svg/youtube.svg";
 
 // Slider
 
-export { default as one } from "./slider/01.png";
-export { default as two } from "./slider/02.png";
-export { default as three } from "./slider/03.png";
-export { default as four } from "./slider/04.png";
-export { default as five } from "./slider/05.png";
-export { default as six } from "./slider/06.png";
-export { default as seven } from "./slider/07.png";
-export { default as eight } from "./slider/08.png";
-export { default as nine } from "./slider/09.png";
-export { default as ten } from "./slider/010.png";
-export { default as eleven } from "./slider/011.png";
-export { default as twelve } from "./slider/012.png";
-export { default as thirteen } from "./slider/013.png";
-export { default as fourteen } from "./slider/014.png";
-export { default as fifteen } from "./slider/015.png";
-export { default as sixteen } from "./slider/016.png";
-export { default as seventeen } from "./slider/017.png";
-export { default as eightteen } from "./slider/018.png";
-export { default as nighteen } from "./slider/019.png";
-export { default as twenty } from "./slider/020.png";
+// export { default as one } from "./slider/01.png";
+// export { default as two } from "./slider/02.png";
+// export { default as three } from "./slider/03.png";
+// export { default as four } from "./slider/04.png";
+// export { default as five } from "./slider/05.png";
+// export { default as six } from "./slider/06.png";
+// export { default as seven } from "./slider/07.png";
+// export { default as eight } from "./slider/08.png";
+// export { default as nine } from "./slider/09.png";
+// export { default as ten } from "./slider/010.png";
+// export { default as eleven } from "./slider/011.png";
+// export { default as twelve } from "./slider/012.png";
+// export { default as thirteen } from "./slider/013.png";
+// export { default as fourteen } from "./slider/014.png";
+// export { default as fifteen } from "./slider/015.png";
+// export { default as sixteen } from "./slider/016.png";
+// export { default as seventeen } from "./slider/017.png";
+// export { default as eightteen } from "./slider/018.png";
+// export { default as nighteen } from "./slider/019.png";
+// export { default as twenty } from "./slider/020.png";
 
 // partners
 

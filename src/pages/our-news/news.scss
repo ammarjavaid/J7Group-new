@@ -100,10 +100,12 @@
           font-size: 11px;
           color: gray;
         }
-        h6 {
+        a {
+          display: flex;
+          justify-content: end;
           font-size: 14px;
-          text-align: right;
           cursor: pointer;
+          color: black;
           margin: 0;
           &:hover {
             color: $primaryColor;

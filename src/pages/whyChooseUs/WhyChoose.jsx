@@ -1,6 +1,6 @@
 import React from "react";
 import "./choose.scss";
-import MyVideo from "../../assets/video/video2.mp4";
+// import MyVideo from "../../assets/video/video2.mp4";
 import { GoldenTulipLogoWhite } from "../../assets";
 import { Link } from "react-router-dom";
 
@@ -10,9 +10,9 @@ const WhyChoose = () => {
       <div className="choose">
         <div className="choose-wrapper">
           <div className="video-aspect-ratio">
-            <video width="1500" height="250" autoPlay muted loop playsInline>
+            {/* <video width="1500" height="250" autoPlay muted loop playsInline>
               <source src={MyVideo} type="video/mp4" />
-            </video>
+            </video> */}
           </div>
           <div className="container content">
             <div className="content-left">

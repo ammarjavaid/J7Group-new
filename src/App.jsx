@@ -6,6 +6,7 @@ import About from "./pages/about/About";
 import Blogs from "./pages/blogs/Blogs";
 import Layout from "./pages/layout/Layout";
 import { AiOutlineVideoCamera } from "react-icons/ai";
+import WhatsAppButton from "./Component/whatsapp";
 
 const App = () => {
   const MyLayout = ({ children }) => {
@@ -48,6 +49,8 @@ const App = () => {
             }
           />
         </Routes>
+
+        <WhatsAppButton/>
       </BrowserRouter>
     </>
   );

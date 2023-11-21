@@ -1,18 +1,23 @@
 import React, { useEffect, useRef } from "react";
 import "./heroSection.scss";
 import Carousel from "react-bootstrap/Carousel";
-import { Slides } from "./constant";
-import { Fade } from "react-reveal";
+// import { Slides } from "./constant";
+// import { Fade } from "react-reveal";
 import "react-phone-number-input/style.css";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { getRequest } from "../../service/apiCalls";
+import { BASE_URL_IMAGES } from "../../Utils";
+import { Fade } from "react-bootstrap";
 
 const HeroSection = () => {
   const carouselRef = useRef(null);
 
   const [phone, setPhone] = useState("");
   const [countryCode, setCountryCode] = useState("pk");
+  const [data, setData] = useState([]);
+
 
   const handlePhoneChange = (phoneNumber, country) => {
     const extractedCountryCode = phoneNumber.split(" ")[0];
@@ -36,18 +41,38 @@ const HeroSection = () => {
     };
   }, []);
 
+
+
+  const GetAllTrading = async () => {
+    const onSuccess = (res) => {
+      setData(res?.data);
+    };
+
+    const onError = () => {
+      // setLoading(false);
+    };
+
+    await getRequest("", "slide/get-all", true, onSuccess, onError);
+  };
+
+  useEffect(() => {
+    GetAllTrading();
+  }, []);
+
+
+
   return (
     <>
       <Carousel fade className="slide" ref={carouselRef} indicators={false}>
-        {Slides.map((item) => (
+        {data?.map((item) => (
           <Carousel.Item>
-            <img src={item.image} alt="" className="img" />
+            <img src={`${BASE_URL_IMAGES}/${item?.image}`} alt="" className="img" />
             <Carousel.Caption>
               <Fade top>
-                <h3>{item.title}</h3>
+                <h3 style={{opacity:"1"}}>{item.name}</h3>
               </Fade>
               <Fade bottom>
-                <p>{item.description}</p>
+                <p style={{opacity:"1"}}>{item.description}</p>
               </Fade>
             </Carousel.Caption>
           </Carousel.Item>

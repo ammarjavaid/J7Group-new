@@ -1,13 +1,13 @@
 import React from "react";
 import "./construction.scss";
-import { LeftSide, one } from "../../assets";
+import { LeftSide } from "../../assets";
 
 const Construction = () => {
   return (
     <>
       <div className="construction">
         <div className="bg-img">
-          <img src={one} alt="" />
+          {/* <img src={one} alt="" /> */}
         </div>
 
         <div className="container construction-content">
