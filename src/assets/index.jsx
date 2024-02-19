@@ -67,7 +67,7 @@ export { default as ReviewImg } from "./svg/review.jpg";
 
 // construction
 
-export { default as LeftSide } from "./svg/Left Side.jpg";
+export { default as One } from "./svg/01.png";
 
 // location
 
@@ -153,3 +153,6 @@ export { default as OneMall } from "./previousProjects/one-mall.jpg";
 export { default as Mall } from "./previousProjects/mall.jpg";
 export { default as PineVilla } from "./previousProjects/pine villa.jpg";
 export { default as Froebels } from "./previousProjects/Froebels.webp";
+
+// profile
+export { default as Profile } from "./profile/profile.jpg";

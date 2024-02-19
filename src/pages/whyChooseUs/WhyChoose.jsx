@@ -1,6 +1,6 @@
 import React from "react";
 import "./choose.scss";
-// import MyVideo from "../../assets/video/video2.mp4";
+// import MyVideo from "../../assets/video2.mp4";
 import { GoldenTulipLogoWhite } from "../../assets";
 import { Link } from "react-router-dom";
 
@@ -10,13 +10,15 @@ const WhyChoose = () => {
       <div className="choose">
         <div className="choose-wrapper">
           <div className="video-aspect-ratio">
-            {/* <video width="1500" height="250" autoPlay muted loop playsInline>
-              <source src={MyVideo} type="video/mp4" />
-            </video> */}
+            <video width="1500" height="250" autoPlay muted loop playsInline>
+              <source
+                src="https://textract-console-us-east-1-a6af3b5c-d71d-4e63-962c-a4d97298dc03.s3.amazonaws.com/video2.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div className="container content">
             <div className="content-left">
-              {/* <h2> Our Trusted Partner</h2> */}
               <h5>
                 We are is pleased to establish a partnership with Golden Tulip.
               </h5>

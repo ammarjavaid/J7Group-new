@@ -59,13 +59,17 @@
         padding: 30px 30px 50px 30px;
         position: relative;
         margin: auto !important;
-        height: 170px;
+        height: 230px;
+        // background-color: pink;
         gap: 30px;
         // box-shadow: -4px 3px 32px -2px #eee;
         .desc {
           font-size: 12px;
           padding-bottom: 0;
           margin-bottom: 0;
+          // background-color: red;
+          height: 110px;
+          text-align: justify;
         }
         .profile-detail {
           display: flex;

@@ -18,7 +18,6 @@ const HeroSection = () => {
   const [countryCode, setCountryCode] = useState("pk");
   const [data, setData] = useState([]);
 
-
   const handlePhoneChange = (phoneNumber, country) => {
     const extractedCountryCode = phoneNumber.split(" ")[0];
 
@@ -41,8 +40,6 @@ const HeroSection = () => {
     };
   }, []);
 
-
-
   const GetAllTrading = async () => {
     const onSuccess = (res) => {
       setData(res?.data);
@@ -59,20 +56,20 @@ const HeroSection = () => {
     GetAllTrading();
   }, []);
 
-
+  console.log(data);
 
   return (
     <>
       <Carousel fade className="slide" ref={carouselRef} indicators={false}>
         {data?.map((item) => (
           <Carousel.Item>
-            <img src={`${BASE_URL_IMAGES}/${item?.image}`} alt="" className="img" />
+            <img src={`${item?.image}`} alt="" className="img" />
             <Carousel.Caption>
               <Fade top>
-                <h3 style={{opacity:"1"}}>{item.name}</h3>
+                <h3 style={{ opacity: "1" }}>{item.name}</h3>
               </Fade>
               <Fade bottom>
-                <p style={{opacity:"1"}}>{item.description}</p>
+                <p style={{ opacity: "1" }}>{item.description}</p>
               </Fade>
             </Carousel.Caption>
           </Carousel.Item>

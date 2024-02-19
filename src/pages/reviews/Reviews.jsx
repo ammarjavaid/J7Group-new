@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./reviews.scss";
 import { ReviewImg } from "../../assets";
 import { Carousel } from "antd";
+import { ReviewData } from "./constant";
 
 const Reviews = () => {
   const onChange = (currentSlide) => {
@@ -38,13 +39,9 @@ const Reviews = () => {
                 },
               ]}
             >
-              {[1, 2, 3, 4, 5, 6].map((el) => (
+              {ReviewData.map((el) => (
                 <div className="box">
-                  <p className="desc">
-                    Thank you walls property help me, choice dream home We were
-                    impressed with the build quality, Plus they are
-                    competitively priced.
-                  </p>
+                  <p className="desc">{el.desc}</p>
                   <div className="profile-detail">
                     <div className="img">
                       <img src={ReviewImg} alt="" />

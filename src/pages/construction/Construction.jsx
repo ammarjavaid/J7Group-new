@@ -1,13 +1,13 @@
 import React from "react";
 import "./construction.scss";
-import { LeftSide } from "../../assets";
+import { One } from "../../assets";
 
 const Construction = () => {
   return (
     <>
       <div className="construction">
         <div className="bg-img">
-          {/* <img src={one} alt="" /> */}
+          <img src={One} alt="" />
         </div>
 
         <div className="container construction-content">
@@ -20,8 +20,13 @@ const Construction = () => {
               <div className="circle"></div>
               <p> Ground Breaking </p>
             </div>
-            <div className="process-two">
+            <div className="process-one">
               <h1 className="sub-heading"> 2023 </h1>
+              <div className="circle"></div>
+              <p> Grey Structure Completion </p>
+            </div>
+            <div className="process-two">
+              <h1 className="sub-heading"> 2024 </h1>
               <div className="circle"></div>
               <p> Grey Structure Completion </p>
             </div>

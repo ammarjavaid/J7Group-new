@@ -82,15 +82,15 @@ export const Data = [
   },
   {
     img: CarParking,
-    title: "Car Parking",
+    title: "2 level Smart UNDERGROUND Parking",
   },
   {
     img: cctvSurveillanceSystem,
-    title: "CCTV Surveillance System",
+    title: " CCTV Surveillance 24/7",
   },
   {
     img: Dining,
-    title: "Dining",
+    title: "Fine Dining Facilities",
   },
   {
     img: Elevator,
@@ -98,7 +98,7 @@ export const Data = [
   },
   {
     img: FitnessCenter,
-    title: "Fitness Center",
+    title: " Ultra-Modern Fitness Clubs & Gymnasium",
   },
   {
     img: LuggageBay,
@@ -114,7 +114,7 @@ export const Data = [
   },
   {
     img: RooftopRestaurant,
-    title: "Rooftop Restaurant",
+    title: "Roof Top Outdoor Restaurant",
   },
   {
     img: SaunaSpa,
@@ -122,6 +122,6 @@ export const Data = [
   },
   {
     img: SwimmingPool,
-    title: "Swimming Pool",
+    title: "Well-Equipped Indoor Pools",
   },
 ];

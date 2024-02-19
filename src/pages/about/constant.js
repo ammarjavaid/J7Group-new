@@ -26,13 +26,13 @@ export const ProfileData = [
     img: MDirestor,
     designation: "Director",
     name: "Abdul Waheed",
-    desc: "I take immense pride as the project director of Radisson Blu Hotel & Residences, Islamabad. It is a dream come true for me as the top high-rise specialist to introduce a development of this level. I am glad to be a part of the leadership team using state-of-the-art technology to ensure luxury, elegance, and comfort under the same roof.",
+    desc: "Assuming the position of Director at Golden Tulip Islamabad is truly exciting for me. Drawing upon my vast expertise in high-rise projects, I aim to craft an extraordinary and unmatched establishment. As a key member of our leadership team, I’m enthusiastic about implementing stateof-the-art technology to seamlessly blend luxury, sophistication, and comfort into our project.",
   },
   {
     img: PDirestor,
     designation: "Project Director",
     name: "Fiyyaz Awan",
-    desc: "I take immense pride as the project director of Radisson Blu Hotel & Residences, Islamabad. It is a dream come true for me as the top high-rise specialist to introduce a development of this level. I am glad to be a part of the leadership team using state-of-the-art technology to ensure luxury, elegance, and comfort under the same roof.",
+    desc: "I’m honored to serve as the Project Director for Golden Tulip Islamabad. It’s a fulfilling opportunity for me, leveraging my expertise in high-rise projects to bring forth a development of unparalleled excellence. As a member of the leadership team, I’m excited to employ cutting-edge technology, ensuring a seamless blend of luxury, sophistication, and comfort within our establishment.",
   },
 ];
 

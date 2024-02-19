@@ -5,17 +5,14 @@ import { getRequest } from "../../service/apiCalls";
 import { BASE_URL_IMAGES } from "../../Utils";
 
 const Blogs = () => {
-
-
   const [data, setData] = useState([]);
-
 
   const GetAllBlogs = async () => {
     const onSuccess = (res) => {
-      console.log(res.data)
+      console.log(res.data);
       setData(res?.data);
 
-      console.log(res?.data)
+      console.log(res?.data);
     };
 
     const onError = () => {
@@ -29,8 +26,6 @@ const Blogs = () => {
     GetAllBlogs();
   }, []);
 
-
-
   return (
     <>
       <div className="container">
@@ -40,7 +35,7 @@ const Blogs = () => {
             {data.map((el) => (
               <div className="card">
                 <div className="img">
-                <img src={`${BASE_URL_IMAGES}/${el?.image}`} alt="" className="zoom-image" />
+                  <img src={`${el?.image}`} alt="" className="zoom-image" />
                 </div>
                 <div className="body">
                   <h2> {el.title} </h2>

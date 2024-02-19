@@ -1,9 +1,9 @@
 import React from "react";
 import "./qrcode.scss";
-// import { one } from "../../assets";
 import { Links } from "./constant";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link, useNavigate } from "react-router-dom";
+import { One } from "../../assets";
 
 const QRcode = () => {
   const naviagte = useNavigate();
@@ -12,7 +12,7 @@ const QRcode = () => {
     <>
       <div className="qrcode" onClick={() => naviagte("/")}>
         <div className="img">
-          {/* <img src={one} alt="" /> */}
+          <img src={One} alt="" />
           <h5 className="back-icon">
             <IoIosArrowBack />
           </h5>

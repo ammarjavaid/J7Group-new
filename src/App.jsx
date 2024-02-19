@@ -7,6 +7,7 @@ import Blogs from "./pages/blogs/Blogs";
 import Layout from "./pages/layout/Layout";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import WhatsAppButton from "./Component/whatsapp";
+import Navigator from "./pages/navigator/Navigator";
 
 const App = () => {
   const MyLayout = ({ children }) => {
@@ -48,9 +49,10 @@ const App = () => {
               </MyLayout>
             }
           />
+          <Route path="/navigator" element={<Navigator />} />
         </Routes>
 
-        <WhatsAppButton/>
+        <WhatsAppButton />
       </BrowserRouter>
     </>
   );

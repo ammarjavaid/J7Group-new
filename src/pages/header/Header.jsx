@@ -12,10 +12,34 @@ import Sticky from "react-stickynode";
 import PDFOne from "../../assets/pdf/GoldenTulipBrochure.pdf";
 import PDFTwo from "../../assets/pdf/Presentation.pdf";
 import PDFThree from "../../assets/pdf/PriceList.pdf";
+import PDFFour from "../../assets/pdf/Company Profile (Solitaire Hoel).pdf";
+import PDFFive from "../../assets/pdf/Golden Tulip (Brochure).pdf";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import PhoneInput from "react-phone-input-2";
 
 const Header = () => {
+  // fot scrolling
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const location = useLocation();
+
+  const path = window.location.pathname;
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY < 100) {
+      setIsScrolled(false);
+    } else {
+      setIsScrolled(true);
+    }
+  };
+
   const items = [
     {
       label: (
@@ -117,8 +141,8 @@ const Header = () => {
     },
     {
       label: (
-        <a href={PDFOne} target="_blank">
-          Brochure
+        <a href={PDFFive} target="_blank">
+          Golden Tulip (Brochure)
         </a>
       ),
       key: "2",
@@ -127,16 +151,39 @@ const Header = () => {
       type: "divider",
     },
     {
-      label: <a>Floor Plan</a>,
+      label: (
+        <a href={PDFFour} target="_blank">
+          Company Profile (Solitaire Hotel)
+        </a>
+      ),
       key: "3",
     },
-    {
-      type: "divider",
-    },
-    {
-      label: <a>Navigator</a>,
-      key: "4",
-    },
+    // {
+    //   label: <a>Floor Plan</a>,
+    //   key: "3",
+    // },
+    // {
+    //   type: "divider",
+    // },
+    // {
+    //   label: (
+    //     <a
+    //       href="/navigator"
+    //       target="_blank"
+    //       className={`item ${
+    //         isScrolled ||
+    //         path.includes("navigator") ||
+    //         path.includes("about") ||
+    //         path.includes("blogs")
+    //           ? "scroll"
+    //           : ""
+    //       }`}
+    //     >
+    //       Navigator
+    //     </a>
+    //   ),
+    //   key: "4",
+    // },
   ];
 
   const navigate = useNavigate();
@@ -181,7 +228,7 @@ const Header = () => {
       ),
       getItem("Brochure", "Brochure"),
       getItem("Rate List", "Rate List"),
-      getItem("Navigator", "Navigator"),
+      // getItem("Navigator", "Navigator"),
     ]),
   ];
   const itemsSide = [
@@ -191,29 +238,6 @@ const Header = () => {
       getItem("J7 One Mall", "J7 One Mall"),
     ]),
   ];
-
-  // fot scrolling
-
-  const location = useLocation();
-
-  const path = window.location.pathname;
-
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleScroll = () => {
-    if (window.scrollY < 100) {
-      setIsScrolled(false);
-    } else {
-      setIsScrolled(true);
-    }
-  };
 
   // modal
 
@@ -242,6 +266,7 @@ const Header = () => {
           <div className="container header-content">
             <NavLink to="/">
               {isScrolled ||
+              path.includes("navigator") ||
               path.includes("about") ||
               path.includes("blogs") ? (
                 <img src={Logo} alt="" />
@@ -254,6 +279,7 @@ const Header = () => {
                 <li
                   className={`item ${
                     isScrolled ||
+                    path.includes("navigator") ||
                     path.includes("about") ||
                     path.includes("blogs")
                       ? "scroll"
@@ -267,6 +293,7 @@ const Header = () => {
                 <li
                   className={`item ${
                     isScrolled ||
+                    path.includes("navigator") ||
                     path.includes("about") ||
                     path.includes("blogs")
                       ? "scroll"
@@ -286,6 +313,7 @@ const Header = () => {
                     <Space
                       className={`link-item ${
                         isScrolled ||
+                        path.includes("navigator") ||
                         path.includes("about") ||
                         path.includes("blogs")
                           ? "scroll"
@@ -302,6 +330,7 @@ const Header = () => {
                 <li
                   className={`item ${
                     isScrolled ||
+                    path.includes("navigator") ||
                     path.includes("about") ||
                     path.includes("blogs")
                       ? "scroll"
@@ -313,7 +342,10 @@ const Header = () => {
               </NavLink>
               <li
                 className={`item ${
-                  isScrolled || path.includes("about") || path.includes("blogs")
+                  isScrolled ||
+                  path.includes("navigator") ||
+                  path.includes("about") ||
+                  path.includes("blogs")
                     ? "scroll"
                     : ""
                 }`}
@@ -327,6 +359,7 @@ const Header = () => {
                     <Space
                       className={`link-item ${
                         isScrolled ||
+                        path.includes("navigator") ||
                         path.includes("about") ||
                         path.includes("blogs")
                           ? "scroll"
@@ -342,7 +375,10 @@ const Header = () => {
               <li
                 onClick={showModal}
                 className={`item ${
-                  isScrolled || path.includes("about") || path.includes("blogs")
+                  isScrolled ||
+                  path.includes("navigator") ||
+                  path.includes("about") ||
+                  path.includes("blogs")
                     ? "scroll"
                     : ""
                 }`}
@@ -355,7 +391,10 @@ const Header = () => {
             </ul>
             <div
               className={`social-icons ${
-                isScrolled || path.includes("about") || path.includes("blogs")
+                isScrolled ||
+                path.includes("navigator") ||
+                path.includes("about") ||
+                path.includes("blogs")
                   ? "scroll"
                   : ""
               }`}
